@@ -1,0 +1,68 @@
+# Bitstack
+
+> Bitstack is a French consumer Bitcoin savings application operated by Bitstack Digital Assets SAS
+> (Meyreuil, France). Users accumulate Bitcoin through automatic round-ups on card purchases, recurring
+> dollar-cost-averaging buys, one-off buys from EUR 1, peer-to-peer transfers, a cash account with free
+> SEPA instant transfers, and a payment card that pays Bitcoin cashback. The company reports 350,000+
+> users and EUR 350M+ invested. It is licensed by the AMF as a Crypto-Assets Service Provider
+> (A2025-003) and is an ACPR-registered agent (747088) of the electronic money institution Xpollens.
+
+## Important for agents
+
+- Bitstack publishes **no public API**, no developer portal, no documentation site, and no
+  machine-readable contract (no OpenAPI, Swagger, GraphQL, AsyncAPI, MCP server, or A2A agent card).
+  There is nothing here for an agent to call. The product is delivered only through the iOS and Android
+  applications.
+- `api.bitstack-app.com` resolves but answers HTTP 404 with an empty body on every path probed, including
+  the root. It is an application backend for the mobile clients, not a documented public API.
+- Every `/.well-known/*` path returns 404 on every host. See `well-known/bitstack-well-known.yml`.
+- **Name collision.** Two unrelated companies use the name Bitstack and DO ship APIs:
+  `bitstack.com` (Web 3.0 blockchain node infrastructure APIs) and `bitstack.app` (an unrelated
+  open-source Nostr relay, "Nosflare"). Do not attribute their APIs, packages, or specifications to this
+  company.
+
+## Product
+
+- [Home](https://www.bitstack-app.com/en): product overview
+- [Round-Ups](https://www.bitstack-app.com/en/roundups): automatic spare-change Bitcoin savings
+- [Card](https://www.bitstack-app.com/en/card): payment card with Bitcoin cashback
+- [Security](https://www.bitstack-app.com/en/security): stated security posture and partners
+- [Pricing](https://www.bitstack-app.com/en/pricing): full published fee schedule
+- [Bitcoin Price](https://www.bitstack-app.com/en/bitcoin-price): market price page
+
+## Company
+
+- [About](https://www.bitstack-app.com/en/about): founders, mission, investors
+- [News](https://www.bitstack-app.com/en/news): company news
+- [Media & Press](https://www.bitstack-app.com/en/media-press): press kit
+- [Careers](https://www.bitstack-app.com/en/careers): open roles
+- [Contact](https://www.bitstack-app.com/en/contact): contact form
+- [GitHub](https://github.com/bitstackapp): 14 public repositories, all forks of third-party projects
+
+## Support
+
+- [Help Center / FAQ](https://help.bitstack-app.com/en/)
+- [Telegram community](https://t.me/bitstack)
+- [Discord](https://discord.com/invite/nWmbXJ44qu)
+
+## Legal and regulatory
+
+- [Terms and Conditions](https://www.bitstack-app.com/en/terms-and-conditions)
+- [Privacy Policy](https://www.bitstack-app.com/en/privacy-policy)
+- [Regulatory Documents Hub](https://www.bitstack-app.com/en/regulatory-documents-hub): risk warnings,
+  complaints policy, conflict-of-interest policy, best-execution and order-management policy, retention
+  policy, commercial policy, sustainability-indicators disclosure
+
+## Apps
+
+- [iOS App Store](https://apps.apple.com/fr/app/bitstack-buy-sell-bitcoin/id1608783388)
+- [Google Play](https://play.google.com/store/apps/details?id=com.bitstack.app)
+
+## API Evangelist profile artifacts
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/bitstack/refs/heads/main/apis.yml)
+- [Plans / fee schedule](https://raw.githubusercontent.com/api-evangelist/bitstack/refs/heads/main/plans/bitstack-plans-pricing.yml)
+- [Conformance and licences](https://raw.githubusercontent.com/api-evangelist/bitstack/refs/heads/main/conformance/bitstack-conformance.yml)
+- [Domain security probe](https://raw.githubusercontent.com/api-evangelist/bitstack/refs/heads/main/security/bitstack-domain-security.yml)
+- [Well-known probe](https://raw.githubusercontent.com/api-evangelist/bitstack/refs/heads/main/well-known/bitstack-well-known.yml)
+- [Package registry probe](https://raw.githubusercontent.com/api-evangelist/bitstack/refs/heads/main/packages/bitstack-packages.yml)

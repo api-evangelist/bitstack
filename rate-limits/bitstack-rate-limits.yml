@@ -1,0 +1,14 @@
+generated: '2026-08-17'
+method: searched
+source: https://help.bitstack-app.com/en/
+note: >-
+  No API rate limits are published because no API is published. Recorded as an honest zero rather than
+  omitted, so the absence is distinguishable from "not checked". The only usage ceilings Bitstack
+  documents are PRODUCT limits on the consumer app, not API limits, and they are captured in
+  plans/bitstack-plans-pricing.yml (free ATM withdrawal volume of EUR 200 or 5 withdrawals per month;
+  EUR 1,000 per month of foreign-currency spend before an exchange fee applies). No RateLimits pointer is
+  wired in apis.yml.
+limit_count: 0
+limits: []
+headers: []
+exhaustion_status: null

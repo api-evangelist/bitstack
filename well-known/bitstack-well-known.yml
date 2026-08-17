@@ -1,0 +1,55 @@
+generated: '2026-08-17'
+method: probed
+source: live GET probes of /.well-known/* on every Bitstack host known to API Evangelist
+note: >-
+  Every probed path returned HTTP 404 on every host. No .well-known document of any kind is served by
+  Bitstack, so NO WellKnown, SecurityTxt or APICatalog pointer is wired in apis.yml — this file records a
+  verified absence, not a presence. On www.bitstack-app.com (a Webflow-hosted marketing site) the 404
+  body is a short HTML page reading "Invalid .well-known request"; that is a genuine 404, not a document.
+  api.bitstack-app.com resolves and answers with a bare 404 and a zero-length body on every path,
+  including the site root, which is consistent with an application backend that serves the mobile apps
+  only and publishes nothing anonymously.
+hosts:
+- host: https://api.bitstack-app.com
+  root_status: 404
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://www.bitstack-app.com
+  root_status: 200
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+summary:
+  paths_probed: 16
+  documents_found: 0
+  security_txt: false
+  agent_card: false

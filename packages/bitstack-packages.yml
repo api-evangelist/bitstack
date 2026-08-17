@@ -1,0 +1,54 @@
+generated: '2026-08-17'
+method: probed
+source: >-
+  registry.npmjs.org, pypi.org, rubygems.org and api.github.com/orgs/bitstackapp probed directly on
+  2026-08-17
+note: >-
+  Bitstack publishes no client library in any language, which follows from having no API to wrap. Its
+  GitHub organization (github.com/bitstackapp) is real and holds 14 public repositories, but every one of
+  them is a FORK of a third-party project used inside its Flutter mobile app or its infrastructure
+  (privacy_screen, flutter_inappwebview, flutter-segment, platform_device_id, country, iban,
+  checkout.com frames-ios, bitcoin-core, pgcat, iris-web, argo-rollouts gatewayapi plugin). The single
+  non-fork repository, joinstackapp.github.io, is a GitHub Pages site last pushed 2021-03-27. No
+  first-party SDK, no published package, and therefore NO SDKs or Packages pointer is wired in apis.yml:
+  this file records a verified absence.
+package_count: 0
+official_package_count: 0
+packages: []
+registry_probes:
+- registry: npm
+  name: bitstack
+  status: 404
+  version: null
+- registry: npm
+  name: '@bitstack/sdk'
+  status: 404
+  version: null
+- registry: npm
+  name: bitstack-sdk
+  status: 404
+  version: null
+- registry: pypi
+  name: bitstack
+  status: 404
+  version: null
+- registry: rubygems
+  name: bitstack
+  status: 404
+  version: null
+github:
+  org: bitstackapp
+  url: https://github.com/bitstackapp
+  status: 200
+  public_repos: 14
+  forks: 13
+  first_party_repos: 1
+  first_party_note: >-
+    joinstackapp.github.io only, a GitHub Pages site with no library code; last pushed 2021-03-27
+  latest_activity: '2025-03-20'
+name_collision_warning: >-
+  Two unrelated companies use the name Bitstack and DO ship developer surfaces. bitstack.com is a Web 3.0
+  blockchain node-infrastructure API provider (title: "Bitstack - Web 3.0 Blockchain APIs and Node
+  Infrastructure"); bitstack.app serves an unrelated open-source Nostr relay ("Nosflare"). Neither is
+  this company. Any package, spec, or API found under those domains must NOT be attributed to Bitstack
+  Digital Assets SAS.

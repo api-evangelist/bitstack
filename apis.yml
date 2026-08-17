@@ -1,19 +1,39 @@
 aid: bitstack
 name: Bitstack
-description: 'Bitstack is a company surfaced as a portfolio company of serena and added to the API Evangelist
-  network as a stub for enrichment. Sector: blockchain. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Bitstack is a French consumer Bitcoin savings application operated by Bitstack Digital Assets
+  SAS (Meyreuil, France), which lets retail users accumulate Bitcoin through automatic round-ups on
+  everyday card purchases, recurring dollar-cost-averaging buys (hourly to monthly), one-off card buys
+  from EUR 1, peer-to-peer transfers by phone number or email, a cash account with free SEPA instant
+  transfers, and a Bitstack payment card that pays Bitcoin cashback. The company reports more than
+  350,000 users and over EUR 350M invested through the app. It is licensed as a Crypto-Assets Service
+  Provider with the French Autorite des Marches Financiers (AMF) under number A2025-003 for exchange,
+  order execution, custody and transfer of crypto-assets, and is a licensed agent of the electronic
+  money institution Xpollens with the ACPR under number 747088. Bitstack publishes a public fee
+  schedule and a regulatory documents hub, but ships no public developer API, developer portal, or
+  machine-readable API contract of any kind: the product is delivered exclusively through its iOS and
+  Android applications.'
+image: https://cdn.prod.website-files.com/63ea3e6d2856ff83c7d77160/6710f4f300ea8bdff9e78518_favicon_bitstack.png
 url: https://raw.githubusercontent.com/api-evangelist/bitstack/refs/heads/main/apis.yml
 x-type: company
 x-source: serena-portfolio
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profile
+x-tier-reason: no-public-api-surface
 specificationVersion: '0.20'
 created: '2026-08-17'
 modified: '2026-08-17'
 tags:
 - Company
 - Blockchain
+- Bitcoin
+- Cryptocurrency
+- Fintech
+- Savings
+- Consumer Finance
+- Payments
+- Mobile Application
+- France
+- Europe
+- Regulated
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +43,49 @@ maintainers:
 common:
 - type: Website
   url: https://www.bitstack-app.com/
+- type: Pricing
+  url: https://www.bitstack-app.com/en/pricing
+- type: Plans
+  url: plans/bitstack-plans-pricing.yml
+- type: TermsOfService
+  url: https://www.bitstack-app.com/en/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://www.bitstack-app.com/en/privacy-policy
+- type: Support
+  url: https://help.bitstack-app.com/en/
+- type: Blog
+  url: https://www.bitstack-app.com/en/news
+- type: GitHubOrganization
+  url: https://github.com/bitstackapp
+- type: Compliance
+  url: https://www.bitstack-app.com/en/regulatory-documents-hub
+- type: Conformance
+  url: conformance/bitstack-conformance.yml
+- type: DomainSecurity
+  url: security/bitstack-domain-security.yml
+- type: LLMsTxt
+  url: llms/bitstack-llms.txt
+x-enrichment:
+  date: '2026-08-17'
+  status: minimal
+  artifacts_added: 7
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Bitstack ships only a consumer iOS/Android Bitcoin savings app; api.bitstack-app.com resolves but
+    answers a bare empty-bodied 404 on every path including its own root, and none of the 1,687 URLs in
+    the published sitemap is a developer, docs, or API page.
+  evidence:
+  - url: https://api.bitstack-app.com/openapi.json
+    status: 404
+  - url: https://api.bitstack-app.com/
+    status: 404
+  - url: https://www.bitstack-app.com/.well-known/agent-card.json
+    status: 404
+  - url: https://docs.bitstack-app.com/
+    status: 0
+  - url: https://www.bitstack-app.com/sitemap.xml
+    status: 200
+  checked: '2026-08-17'

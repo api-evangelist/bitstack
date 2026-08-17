@@ -1,0 +1,90 @@
+generated: '2026-08-17'
+method: searched
+source: https://www.bitstack-app.com/en/pricing
+note: >-
+  Bitstack publishes no API plans, because it publishes no API. What it does publish is a full consumer
+  fee schedule for the mobile product: a sliding trading-fee scale keyed to rolling 30-day volume, plus
+  fixed fees for withdrawals, the cash account and the payment card. Captured here verbatim as the
+  provider's published commercial terms. There is no free/developer tier, no metered API quota, and no
+  overage model, because there is no programmatic surface to meter.
+currency: EUR
+billing_period: per-transaction
+model: sliding-scale-transaction-fee
+plan_count: 7
+plans:
+- name: Tier 1
+  scope: crypto buy/sell
+  volume_30d_min: 0
+  volume_30d_max: 250
+  fee_percent: 1.49
+- name: Tier 2
+  scope: crypto buy/sell
+  volume_30d_min: 250
+  volume_30d_max: 5000
+  fee_percent: 0.99
+- name: Tier 3
+  scope: crypto buy/sell
+  volume_30d_min: 5000
+  volume_30d_max: 10000
+  fee_percent: 0.89
+- name: Tier 4
+  scope: crypto buy/sell
+  volume_30d_min: 10000
+  volume_30d_max: 50000
+  fee_percent: 0.79
+- name: Tier 5
+  scope: crypto buy/sell
+  volume_30d_min: 50000
+  volume_30d_max: 250000
+  fee_percent: 0.69
+- name: Tier 6
+  scope: crypto buy/sell
+  volume_30d_min: 250000
+  volume_30d_max: 500000
+  fee_percent: 0.59
+- name: Tier 7
+  scope: crypto buy/sell
+  volume_30d_min: 500000
+  volume_30d_max: null
+  fee_percent: 0.49
+minimums:
+- description: Minimum fee when buying by card
+  amount: 0.29
+  currency: EUR
+other_fees:
+- category: crypto-withdrawal
+  option: Standard (approx. 24 hours)
+  fee: free
+  note: minimum 0.00050000 BTC required
+- category: crypto-withdrawal
+  option: Priority (approx. 10 minutes)
+  fee: pro rata plus up to EUR 3
+- category: crypto-withdrawal
+  option: Rush (approx. 2 hours)
+  fee: pro rata plus up to EUR 2
+- category: cash-account
+  option: Account opening
+  fee: free
+- category: cash-account
+  option: SEPA instant transfers
+  fee: free
+- category: cash-account
+  option: Bank deposits
+  fee: free
+- category: cash-account
+  option: Card deposits (Apple Pay / Google Pay)
+  fee: 0.70%
+- category: card
+  option: Card purchase price
+  fee: EUR 9.99 plus delivery fees
+- category: card
+  option: Subscription
+  fee: none
+- category: card
+  option: ATM withdrawals
+  fee: free up to EUR 200/month or 5 withdrawals, then minimum EUR 1 or 1% per transaction
+- category: card
+  option: Foreign currency exchange
+  fee: free up to EUR 1,000/month, then approx. 1%
+api_plans: 0
+api_plans_note: no developer or API pricing is published; no API exists

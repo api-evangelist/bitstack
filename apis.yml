@@ -12,6 +12,17 @@ description: 'Bitstack is a French consumer Bitcoin savings application operated
   schedule and a regulatory documents hub, but ships no public developer API, developer portal, or
   machine-readable API contract of any kind: the product is delivered exclusively through its iOS and
   Android applications.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/63ea3e6d2856ff83c7d77160/6710f4f300ea8bdff9e78518_favicon_bitstack.png
 url: https://raw.githubusercontent.com/api-evangelist/bitstack/refs/heads/main/apis.yml
 x-type: company

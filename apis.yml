@@ -23,6 +23,20 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - plans
+  - rate-limits
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://cdn.prod.website-files.com/63ea3e6d2856ff83c7d77160/6710f4f300ea8bdff9e78518_favicon_bitstack.png
 url: https://raw.githubusercontent.com/api-evangelist/bitstack/refs/heads/main/apis.yml
 x-type: company

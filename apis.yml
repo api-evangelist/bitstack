@@ -55,7 +55,7 @@ tags:
 - Savings
 - Consumer Finance
 - Payments
-- Mobile Applications
+- Mobile App
 - France
 - Europe
 - Regulated
@@ -72,6 +72,7 @@ tags_raw:
 - France
 - Europe
 - Regulated
+- Mobile Applications
 apis: []
 maintainers:
 - FN: Kin Lane

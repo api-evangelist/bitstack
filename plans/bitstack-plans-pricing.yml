@@ -88,3 +88,51 @@ other_fees:
   fee: free up to EUR 1,000/month, then approx. 1%
 api_plans: 0
 api_plans_note: no developer or API pricing is published; no API exists
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models: []
+  units: []
+  plans:
+  - name: Tier 1
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Tier 2
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Tier 3
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Tier 4
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Tier 5
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Tier 6
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Tier 7
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
